@@ -44,7 +44,7 @@ def xclose(s):
 	socklist.remove(s)
 	socklist.remove(fin)
 	relay[fin].close()               #closes the connection of one part of relay
-	done.close()                     #closes the connection of the other part of the relay
+	fin.close()                     #closes the connection of the other part of the relay
 	del relay[fin]
 	del fin
 
